@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<article class="post post-{{ weibo.pk }}">
+    <header class="entry-header">
+        <!--<h1 class="entry-title">{{ None }}</h1>-->
+        <div class="entry-meta">
+            <span class="post-category"><a target="#">{{ weibo.keyword}}</a></span>
+            <span class="post-author"><a target="#">{{ weibo.weibo_screen_name }}</a></span>
+            <span class="post-date"><a target="#"><time class="entry-date"
+                                                        datetime="{{ weibo.weibo_created_at }}">{{ weibo.weibo_created_at }}</time></a></span>
+            <span class="comments-link"><a target="#">{{ weibo.weibo_attitudes_count }} 点赞</a></span>
+            <span class="comments-link"><a target="#">{{ weibo.weibo_reposts_count }} 转发</a></span>
+            <span class="comments-link"><a target="#">{{ weibo.weibo_comments_count }} 评论</a></span>
+        </div>
+    </header>
+    <div class="entry-content clearfix">
+        <script type="text/javascript">
+     $(document).ready(function($) { $('a').attr({ target: "_blank" }); });
+
+        </script>
+        {{ weibo.weibo_text|safe }}
+        <br>
+        <img src="{{ weibo.weibo_pics1 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics2 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics3 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics4 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics5 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics6 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics7 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics8 }}" alt=""><br>
+        <img src="{{ weibo.weibo_pics9 }}" alt=""><br>
+        <br>
+        <a target="_blank" href="{{ weibo.weibo_scheme|safe }}">·原博地址·</a>
+
+    </div>
+</article>
+{% endblock main %}

@@ -1,0 +1,3 @@
+{{ object.weibo_raw_text }}
+{{ object.keyword }}
+{{ object.weibo_screen_name }}

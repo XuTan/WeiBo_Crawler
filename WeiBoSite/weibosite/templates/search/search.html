@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load highlight %}
+
+{% block main %}
+{% if query %}
+{% for result in page.object_list %}
+<article class="post post-{{ result.object.pk }}">
+    <header class="entry-header">
+        <div class="entry-meta">
+            <span class="post-category"><a target="#">{% highlight result.object.keyword with query%}</a></span>
+            <span class="post-author"><a target="#">{% highlight result.object.weibo_screen_name with query %}</a></span>
+            <span class="post-category"><a target="#">{{ result.object.weibo_desc1 }}</a></span>
+            <span class="post-category"><a target="#">{{ result.object.weibo_desc2_fans }}</a></span>
+            <span class="post-date"><a target="#"><time class="entry-date"
+                                                        datetime="{{ result.object.weibo_created_at }}">{{ result.object.weibo_created_at }}</time></a></span>
+            <span class="comments-link"><a target="#">{{result.object.weibo_attitudes_count}} 点赞</a></span>
+            <span class="comments-link"><a target="#">{{ result.object.weibo_reposts_count }} 转发</a></span>
+            <span class="comments-link"><a target="#">{{ result.object.weibo_comments_count }} 评论</a></span>
+        </div>
+    </header>
+    <div class="entry-content clearfix">
+        <p>{% highlight result.object.weibo_raw_text with query %}</p>
+        <div class="read-more cl-effect-14">
+            <a href="{{ result.object.get_absolute_url }}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
+        </div>
+    </div>
+</article>
+{% empty %}
+<div class="no-post">没有搜索到你想要的结果！</div>
+{% endfor %}
+{% if page.has_previous or page.has_next %}
+<div>
+    {% if page.has_previous %}
+    <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous
+        {% if page.has_previous %}</a>{% endif %}
+    |
+    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next
+    &raquo;{% if page.has_next %}</a>{% endif %}
+</div>
+{% endif %}
+{% else %}
+请输入搜索关键词，例如 django
+{% endif %}
+{% endblock main %}

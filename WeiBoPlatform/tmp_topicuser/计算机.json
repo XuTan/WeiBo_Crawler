@@ -1,0 +1,66 @@
+[
+    {
+        "user_uid": 1739964112,
+        "user_keyword": "计算机",
+        "user_screen_name": "计算机世界",
+        "user_desc1": "《计算机世界》官方微博",
+        "user_desc2_fans": "粉丝：62万",
+        "user_profile_image_url": "https://tva3.sinaimg.cn/crop.0.0.180.180.180/67b5bed0jw1e8qgp5bmzyj2050050aa8.jpg"
+    },
+    {
+        "user_uid": 1882475282,
+        "user_keyword": "计算机",
+        "user_screen_name": "微型计算机官方微博",
+        "user_desc1": "《微型计算机》杂志官方微博",
+        "user_desc2_fans": "粉丝：216万",
+        "user_profile_image_url": "https://tva4.sinaimg.cn/crop.0.0.180.180.180/70344b12jw1e8qgp5bmzyj2050050aa8.jpg"
+    },
+    {
+        "user_uid": 1708265521,
+        "user_keyword": "计算机",
+        "user_screen_name": "中国计算机报",
+        "user_desc1": "中国计算机报官方微博",
+        "user_desc2_fans": "粉丝：18万",
+        "user_profile_image_url": "https://tva2.sinaimg.cn/crop.0.0.180.180.180/65d21031jw1e8qgp5bmzyj2050050aa8.jpg"
+    },
+    {
+        "user_uid": 1896006970,
+        "user_keyword": "计算机",
+        "user_screen_name": "计算机应用文摘",
+        "user_desc1": "《计算机应用文摘》官方微博",
+        "user_desc2_fans": "粉丝：75万",
+        "user_profile_image_url": "https://tva2.sinaimg.cn/crop.0.0.716.716.180/7102c53agw1ev8vflhtxmj20jy0jy40e.jpg"
+    },
+    {
+        "user_uid": 2887339314,
+        "user_keyword": "计算机",
+        "user_screen_name": "吴军博士",
+        "user_desc1": "计算机科学家、《浪潮之巅》《数学之美》作者",
+        "user_desc2_fans": "粉丝：18万",
+        "user_profile_image_url": "https://tva4.sinaimg.cn/crop.0.0.180.180.180/ac194d32jw1e8qgp5bmzyj2050050aa8.jpg"
+    },
+    {
+        "user_uid": 1657470871,
+        "user_keyword": "计算机",
+        "user_screen_name": "王威廉",
+        "user_desc1": "UC Santa Barbara计算机科学系助理教授",
+        "user_desc2_fans": "粉丝：10万",
+        "user_profile_image_url": "https://tva1.sinaimg.cn/crop.0.110.440.440.180/62caff97jw8e9la9x3lcbj20c80ict9r.jpg"
+    },
+    {
+        "user_uid": 2114780760,
+        "user_keyword": "计算机",
+        "user_screen_name": "陈世卿院士",
+        "user_desc1": "美国国家工程院院士，美国艺术和科学院院士，中国网格超级计算机发明人",
+        "user_desc2_fans": "粉丝：17万",
+        "user_profile_image_url": "https://tva4.sinaimg.cn/crop.0.0.180.180.180/7e0cfe58jw1e8qgp5bmzyj2050050aa8.jpg"
+    },
+    {
+        "user_uid": 1923974825,
+        "user_keyword": "计算机",
+        "user_screen_name": "Geek官方微博",
+        "user_desc1": "《微型计算机Geek》官方微博",
+        "user_desc2_fans": "粉丝：54万",
+        "user_profile_image_url": "https://tva4.sinaimg.cn/crop.7.0.685.685.180/72ad86a9jw8fchzceocatj20j90q9763.jpg"
+    }
+]
